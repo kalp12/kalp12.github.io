@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./data//logo.jpg" type="image/x-icon" />
+    <title>Kalp Mota | Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=folder"
+    />
+  </head>
+  <body>
+    <!-- HEADER ============================================================ -->
+
+    <header id="navbar">
+      <div class="header-content">
+        <p class="logo" style="margin: 5px 0px">
+          <a href="#info">
+            <svg
+              id="hexagon"
+              width="40"
+              height="40"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polygon
+                id="hex-shape"
+                points="50,5 90,25 90,75 50,95 10,75 10,25"
+                stroke="white"
+                stroke-width="4"
+                fill="none"
+              />
+              <text
+                x="50"
+                y="65"
+                font-family="Arial"
+                font-size="48"
+                text-anchor="middle"
+                fill="white"
+              >
+                K
+              </text>
+            </svg>
+          </a>
+        </p>
+      </div>
+      <nav id="nav">
+        <a href="#about" onclick="closeNavbar()">About</a>
+        <a href="#technology" onclick="closeNavbar()">Skills</a>
+        <a href="#experience" onclick="closeNavbar()">Experience</a>
+        <a href="#projects" onclick="closeNavbar()">Projects</a>
+        <a href="#contact" onclick="closeNavbar()">Contact</a>
+        <a
+          href="./data/Resume_Full_stack.pdf"
+          onclick="closeNavbar()"
+          download
+          class="resume-btn"
+          >Download Resume</a
+        >
+      </nav>
+      <div class="nav-button">
+        <div class="view" id="view">
+          <i class="fa-solid fa-bars" onclick="handleViewClick()"></i>
+        </div>
+        <div class="cancel" id="cancel">
+          <i class="fa-solid fa-xmark" onclick="handleCancelClick()"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- LEFT SIDEBAR ============================================================ -->
+    <div class="left-sidebar">
+      <div class="social">
+        <div title="Github" class="social-icon">
+          <a href="https://github.com/kalp12" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+        <div title="Linkedin" class="social-icon">
+          <a href="https://www.linkedin.com/in/kalp-mota-357514148/" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+        <div title="Leetcode" class="social-icon">  
+          <a href="https://leetcode.com/u/kalp12/" target="_blank"><i class="fa-solid fa-code"></i></a>
+        </div>
+        <div title="Twitter" class="social-icon">
+          <a href="https://x.com/kp12122000" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="line"></div>
+    </div>
+
+    <!-- RIGHT SIDEBAR ============================================================ -->
+    <div class="right-sidebar">
+      <div class="email">kalpmota2000@gmail.com</div>
+      <div class="right-line"></div>
+    </div>
+
+    <!-- GO-UP BUTTON ============================================================ -->
+    <div class="go-up">
+      <button class="scroll-to-top" id="scrollToTopBtn">
+        ☝️
+      </button>
+    </div>
+
+    <!-- INFO ============================================================ -->
+    <section id="info" class="section">
+      <div class="title">Hi, my name is</div>
+      <div class="header">Kalp Mota</div>
+      <p class="para">
+        I am a software engineer with expertise in Python, GenAI, and full stack
+        development. Currently working at LTIMindtree, I have experience in
+        Flask, FastAPI, Django and various tech stacks that I utilize to deliver
+        optimized solutions.
+      </p>
+    </section>
+
+    <!-- ABOUT ============================================================ -->
+    <section id="about" class="section">
+      <div class="header">
+        <div class="start">01.</div>
+        <div class="title">About Me</div>
+        <div class="line"></div>
+      </div>
+
+      <div class="para-image">
+        <div class="para-text">
+          <p class="para">
+            Innovative and results-driven Full-Stack Developer
+            with expertise in building scalable applications and leveraging
+            Generative AI to solve complex problems.
+            Skilled in Python, Java, HTML, CSS, JavaScript and Data Science, with a
+            proven ability to design and deploy sophisticated solutions.
+            Passionate about continuous learning, adapting to emerging technologies,
+            and delivering excellence in dynamic environments. 
+            </p>
+          <br />
+        </div>
+
+        <div class="image">
+          <!-- Remaining photo -->
+          <img src="./data/me2.jpg" alt="Image_Kalp" />
+        </div>
+      </div>
+
+      <br />
+
+      </section>
+
+    <!-- SKILLS / TECHNOLOGY ============================================================ -->
+    <section id="technology" class="section">
+      <div class="header">
+        <div class="start">02.</div>
+        <div class="title">Technologies I've been working with recently</div>
+        <div class="line"></div>
+      </div>
+
+      <div class="technology">
+        <div class="programming-languages">
+          <h3>💻 Programming Languages</h3>
+          <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+          <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java"/>
+          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+          <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"/>
+          <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML"/>
+          <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS"/>
+        </div>
+
+        <div class="cloud">
+          <h3>☁️ Cloud Technologies</h3>
+          <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=FF9900" alt="AWS"/>
+          <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure"/>
+          <img src="https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="GCP"/>
+        </div>
+
+        <div class="db">
+          <h3>🗄️ Database Technologies</h3>
+          <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
+          <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+          <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
+          <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite"/>
+        </div>
+
+        <div class="frameworks">
+          <h3>🔧 Frameworks</h3>
+          <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask"/>
+          <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django"/>
+          <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"/>
+          <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow"/>
+          <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+          <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code"/>
+          <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE ============================================================ -->
+    <section id="experience" class="section">
+      <div class="header">
+        <div class="start">03.</div>
+        <div class="title">Where I've Worked</div>
+        <div class="line"></div>
+      </div>
+
+      <div class="work">
+        <div class="worklist">
+          <!-- <div
+            class="company-item active"
+            onclick="showDescription('ltimindtree')"
+          >
+            LTIMindtree
+          </div> -->
+          <div class="company-item active" onclick="showDescription('ltimindtree-aspect')">
+            LTIMindtree - Aspect
+        </div>
+        <div class="company-item" onclick="showDescription('ltimindtree-travelers')">
+            LTIMindtree - Travelers
+        </div>
+        <div class="company-item" onclick="showDescription('ltimindtree-aspect-2')">
+            LTIMindtree - Aspect
+        </div>
+        <div class="company-item" onclick="showDescription('ltimindtree-zendesk')">
+            LTIMindtree - Zendesk
+        </div>
+          <div class="company-item" onclick="showDescription('lti')">
+            LTI
+          </div>
+        </div>
+        <div class="work-description" id="work-description">
+          <!-- Aspect (2022-2023) -->
+          <div class="description-item" id="ltimindtree-aspect">
+            <div class="header">Product Engineer <span class="organization">@ LTIMindtree - Aspect</span></div>
+            <div class="date">September 2022 - April 2023</div>
+            <ul>
+              <li>Developed AI-driven solutions for document processing, integrating 
+                  <b>Natural Language Processing (NLP)</b>, image classification, and table extraction.</li>
+              
+              <li>Built custom <b>ML and NLP models</b> for <b>City National Bank</b> and <b>Simon-Kucher & Partners</b>, 
+                  focusing on entity recognition, text processing, and data extraction.</li>
+              
+              <li>Automated workflows using <b>Python</b> and <b>AWS</b>, optimizing data extraction, 
+                  document parsing, and real-time processing.</li>
+              
+              <li>Implemented key features to enhance document intelligence:
+                <ul>
+                  <li><b>Document Splitting:</b> Segmented large files to improve data analysis and processing efficiency.</li>
+                  <li><b>Knowledge Nugget Extraction:</b> Identified and highlighted key insights from documents.</li>
+                  <li><b>Sentiment Analysis:</b> Applied NLP techniques to gauge contextual tone and enhance decision-making.</li>
+                </ul>
+              </li>
+              
+              <li>Designed and fine-tuned <b>ML pipelines</b> for <b>object identification</b> and 
+                  <b>text recognition</b>, enhancing accuracy and scalability for large-scale document processing.</li>
+            </ul>
+            
+            <!-- <ul>
+              <li>Developed AI-driven solutions for document processing, incorporating Natural Language Processing (NLP), image classification, and table extraction.</li>
+              <li>Built custom ML and NLP models for City National Bank and Simon-Kucher & Partners, adapting solutions for entity recognition, text processing, and data extraction.</li>
+              <li>Automated workflows using Python and AWS, optimizing data extraction, document parsing, and real-time processing.</li>
+              <li>
+                Implemented features like Document splitting to segment large files for better analysis,
+                  Knowledge nugget extraction to highlight key insights from documents, and
+                  Sentiment analysis to gauge contextual tone and improve decision-making.
+              
+              </li>
+              <li>Designed and fine-tuned ML pipelines for object identification and text recognition, enhancing accuracy and performance in large-scale document processing.</li>
+            </ul> -->
+          </div>
+          
+  
+          <!-- Travelers (2023) -->
+          <div class="description-item" id="ltimindtree-travelers" style="display: none;">
+              <div class="header">Python Developer <span class="organization">@ LTIMindtree - Travelers</span></div>
+              <div class="date">May 2023 - September 2023</div>
+              <!-- <ul>
+                  <li>Automated conversion of insurance form data from Excel to JSON.</li>
+                  <li>Developed scripts to populate PDFs with client data, reducing manual effort.</li>
+                  <li>Integrated API solutions for automated data dumping into client databases.</li>
+                  <li>Enhanced document handling accuracy through automated extraction.</li>
+              </ul> -->
+              <ul>
+                <li>
+                  <strong>Automated Data Conversion:</strong> Designed and implemented a Python-based automation tool to convert large volumes of insurance form data from Excel to JSON format. This streamlined data ingestion into the client’s digital ecosystem, reducing manual intervention and improving efficiency.
+                </li>
+                <li>
+                  <strong>Dynamic PDF Population:</strong> Developed robust scripts to extract structured client data and dynamically populate insurance PDFs. This automation significantly reduced manual form-filling efforts, minimized human errors, and accelerated processing times.
+                </li>
+                <li>
+                  <strong>API Integration & Workflow Automation:</strong> Engineered API-driven solutions to automate the ingestion of structured data into client databases. Integrated RESTful APIs to facilitate seamless data exchange between internal systems and third-party applications, ensuring real-time synchronization and data consistency.
+                </li>
+                <li>
+                  <strong>Enhanced Document Processing:</strong> Implemented intelligent data extraction techniques to analyze and categorize insurance documents, leveraging Python-based parsing libraries. This enhancement improved accuracy in data retrieval, reduced processing errors, and enhanced overall document management.
+                </li>
+                <li>
+                  <strong>Optimization & Scalability:</strong> Optimized the automation pipeline for scalability, allowing efficient processing of high-volume insurance forms. Reduced document processing time by leveraging multi-threading and efficient data handling techniques.
+                </li>
+              </ul>
+            </div>
+  
+          <!-- Aspect (2023-2024) -->
+          <div class="description-item" id="ltimindtree-aspect-2" style="display: none;">
+              <div class="header">Python Backend Developer <span class="organization">@ LTIMindtree - Aspect 2.0</span></div>
+              <div class="date">September 2023 - September 2024</div>
+              <ul>
+                <li>
+                  <strong>Backend Development:</strong> Designed and implemented scalable backend solutions using 
+                  <b>Python, FastAPI, and Flask</b>, ensuring high performance and efficient API interactions.
+                </li>
+                <li>
+                  <strong>LLM & AI Integration:</strong> Integrated advanced <b>Large Language Model (LLM)</b> 
+                  capabilities, incorporating features such as Optical Character Recognition (OCR), regex-based data extraction, 
+                  and intelligent document post-processing to enhance text analysis.
+                </li>
+                <li>
+                  <strong>ML Model Optimization:</strong> Improved efficiency and accuracy of text-processing machine 
+                  learning models by optimizing hyperparameters and fine-tuning GPT-based models for document summarization 
+                  and data extraction.
+                </li>
+                <li>
+                  <strong>Custom API Development:</strong> Developed and maintained <b>RESTful APIs</b> for seamless 
+                  data exchange between internal systems and third-party applications, ensuring optimized data filtering and 
+                  retrieval tailored to client requirements.
+                </li>
+                <li>
+                  <strong>Third-Party App Integration:</strong> Implemented <b>third-party integrations</b> to enhance 
+                  system operability, improving platform functionality and responsiveness using <b>asynchronous operations</b>.
+                </li>
+                <li>
+                  <strong>Async Processing & Performance Tuning:</strong> Implemented <b>asynchronous operations</b> to 
+                  enhance system responsiveness and reduce API latency, improving the overall user experience for real-time 
+                  data processing applications.
+                </li>
+                <li>
+                  <strong>Custom Functionalities & Enhancements:</strong> 
+                  <ul>
+                    <li>Implemented <b>duplicate annotation detection</b> to prevent redundant processing.</li>
+                    <li>Fine-tuned LLM models for improved text processing and entity extraction.</li>
+                    <li>Developed custom scripts to interact with <b>REST APIs</b>, retrieving only client-required data 
+                    while filtering out unnecessary information, improving data handling efficiency.</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Data Handling & Pipeline Automation:</strong> Built automation scripts to streamline 
+                  document workflows, reducing manual intervention and improving processing efficiency for high-volume 
+                  data extraction tasks.
+                </li>
+              </ul>
+              
+              <!-- <ul>
+                  <li>Developed backend solutions with Python, FastAPI, and Flask.</li>
+                  <li>Integrated LLM features such as OCR, regex-based extraction, and document post-processing.</li>
+                  <li>Improved ML model efficiency for text processing and GPT optimizations.</li>
+                  <li>Developed custom REST API scripts to filter relevant client data.</li>
+              </ul> -->
+          </div>
+  
+          <!-- Zendesk (2024-Present) -->
+          <div class="description-item" id="ltimindtree-zendesk" style="display: none;">
+              <div class="header">Python Developer <span class="organization">@ LTIMindtree - Zendesk</span></div>
+              <div class="date">October 2024 - Present</div>
+              <ul>
+                <li>
+                  <strong>Backend Development:</strong> Building and maintaining scalable backend solutions using 
+                  <b>Python, Flask, and FastAPI</b> to support high-performance applications.
+                </li>
+                <li>
+                  <strong>API Development & Integration:</strong> Designing and implementing <b>RESTful APIs</b> while 
+                  integrating third-party applications to enhance product functionality.
+                </li>
+                <li>
+                  <strong>Cloud & Database Management:</strong> Leveraging <b>AWS</b> for cloud-based deployments and 
+                  optimizing <b>SQL databases</b> for efficient data storage and retrieval.
+                </li>
+                <li>
+                  <strong>System Optimization & Performance:</strong> Collaborating with cross-functional teams to improve 
+                  system performance, maintain high code quality, and solve complex backend challenges.
+                </li>
+              </ul>
+              <!-- <ul>
+                  <li>Developing scalable backend solutions using Python, Flask, and FastAPI.</li>
+                  <li>Integrating third-party apps to enhance product functionality.</li>
+                  <li>Leveraging AWS and SQL databases for efficient cloud-based data storage.</li>
+                  <li>Collaborating with teams to improve system performance and maintain code quality.</li>
+              </ul> -->
+          </div>
+          <div class="description-item" id="lti" style="display: none;">
+            <div class="header"> Graduate Engineer Trainee <span class="organization">@ LTI</span></div>
+            <div class="date">July 2022 - September 2022</div>
+            <ul>
+              <li>Completed an intensive <b>3-month training program</b> on <b>Informatica</b>, gaining hands-on experience in <b>data integration, transformation, and ETL processes</b>.</li>
+              <li>Developed strong proficiency in <b>data management</b> and <b>migration strategies</b>, optimizing data flow between various systems.</li>
+              <li>Acquired practical experience in <b>SQL, Python, and Java</b> through training and project-based assignments.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS ============================================================ -->
+    <section id="projects" class="section">
+      <div class="header">
+        <div class="start">04.</div>
+        <div class="title">Projects</div>
+        <div class="line"></div>
+      </div>
+
+      <div class="project-container">
+        <!-- Smart-Resume-Parser -->
+        <div class="card">
+          <div class="header-icons">
+            <div class="left-icons">
+              <i class="fa-regular fa-folder"></i>
+            </div>
+            <div class="right-icons">
+              <i
+                class="fa-brands fa-github icon"
+                onclick="redirect('https://github.com/kalp12/Smart-Resume-Parser')"
+              ></i>
+            </div>
+          </div>
+          <div class="header">Smart-Resume-Parser</div>
+          <div class="description">
+            Smart-Resume-Parser is an <b>AI-powered Resume ATS Checker & Chatbot</b> using <b>Flask</b>, 
+            <b>React.js</b>, and <b>LLMs</b> to generate AI-enhanced resume and insights. 
+            <br />
+            <b>Key Features: </b> Extract Resume info from PDF & DOCX, Check ATS Compatibility, Optimize Resume using AI, Generate ATS-Friendly Resume (DOCX/PDF) and AI Chatbot using Vector DB
+          </div>
+          <div class="technology-used">
+            <ul>
+              <li>LLAMA-3-70b</li>
+              <li>Gemini</li>
+              <li>Flask</li>
+              <li>Python</li>
+              <li>VectorDB</li>
+              <li>PyMuPDF</li>
+              <li>React.js</li>
+              <li>Axios</li>
+              <li>Prompt-Engineering</li>
+            </ul>
+          </div>
+        </div>
+        <!-- NomadNavigator -->
+        <div class="card">
+          <div class="header-icons">
+            <div class="left-icons">
+              <i class="fa-regular fa-folder"></i>
+            </div>
+            <div class="right-icons">
+              <i
+                class="fa-brands fa-github icon"
+                onclick="redirect('https://github.com/kalp12/NomadNavigator')"
+              ></i>
+              <!-- <i
+                class="fa-solid fa-arrow-up-right-from-square icon"
+                onclick="redirect('https://tasktrack-frontend.onrender.com/')"
+              ></i> -->
+            </div>
+          </div>
+          <div class="header">NomadNavigator - AI-Powered Travel Assistant</div>
+          <div class="description">
+            NomadNavigator is an <b>AI-driven travel recommendation system</b> using <b>RAG</b>, 
+            <b>embeddings</b>, and <b>LLMs</b> to generate personalized travel insights. 
+            It employs <b>FAISS</b> for <b>similarity search</b> and handles queries beyond its database.
+            <br />
+            <b>Key Features: </b> Smart search, AI-powered recommendations, and seamless query handling.
+          </div>
+          <div class="technology-used">
+            <ul>
+              <li>LLAMA-3-70b</li>
+              <li>RAG</li>
+              <li>Flask</li>
+              <li>Python</li>
+              <li>VectorDB</li>
+              <li>SQLite</li>
+              <li>Prompt-Engineering</li>
+            </ul>
+          </div>
+        </div>
+        <!-- HomeTrends AI: Property Price Forecast 🏠📈 -->
+        <div class="card">
+          <div class="header-icons">
+            <div class="left-icons">
+              <i class="fa-regular fa-folder"></i>
+            </div>
+            <div class="right-icons">
+              <i
+                class="fa-brands fa-github icon"
+                onclick="redirect('https://github.com/kalp12/Banglore-Home-Prices-prediction-using-ml')"
+              ></i>
+              <!-- <i
+                class="fa-solid fa-arrow-up-right-from-square icon"
+                onclick="redirect('https://tasktrack-frontend.onrender.com/')"
+              ></i> -->
+            </div>
+          </div>
+          <div class="header">HomeTrends AI: Property Price Forecast 🏠📈</div>
+          <div class="description">
+            A machine learning project to predict residential property prices in Bangalore using regression techniques.
+            <br>
+            <b>Key Features: </b>Data Analysis, Price Prediction, Feature Importance, Web Interface, Scalable: Handles 10,000+ data points efficiently
+          </div>
+          <div class="technology-used">
+            <ul>
+              <li>Flask</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Matplotlib</li>
+              <li>Seaborn</li>
+              <li>AWS</li>
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li>Scikit-learn</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Food Ordering System -->
+        <div class="card">
+          <div class="header-icons">
+            <div class="left-icons">
+              <i class="fa-regular fa-folder"></i>
+            </div>
+            <div class="right-icons">
+              <i
+                class="fa-brands fa-github icon"
+                onclick="redirect('https://github.com/kalp12/Food-ordering-django')"
+              ></i>
+              <!-- <i
+                class="fa-solid fa-arrow-up-right-from-square icon"
+                onclick="redirect('https://tasktrack-frontend.onrender.com/')"
+              ></i> -->
+            </div>
+          </div>
+          <div class="header">Food Ordering System 🍔</div>
+          <div class="description">
+            A full-stack food ordering web application built with <b>Django</b>. Manage menus, process orders, and track user interactions.
+            <br>
+            <b>Key Features: </b>User Authentication, Menu Management, Cart System, Order Tracking, Admin Dashboard, Responsive Design
+
+          </div>
+          <div class="technology-used">
+            <ul>
+              <li>Django</li>
+              <li>Python</li>
+              <li>PostgreSQL</li>
+              <li>Heroku</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Automate whatsapp -->
+        <div class="card">
+          <div class="header-icons">
+            <div class="left-icons">
+              <i class="fa-regular fa-folder"></i>
+            </div>
+            <div class="right-icons">
+              <i
+                class="fa-brands fa-github icon"
+                onclick="redirect('https://github.com/kalp12/automate-whatsapp')"
+              ></i>
+              <!-- <i
+                class="fa-solid fa-arrow-up-right-from-square icon"
+                onclick="redirect('https://tasktrack-frontend.onrender.com/')"
+              ></i> -->
+            </div>
+          </div>
+          <div class="header">Bakery WhatsApp Bot</div>
+          <div class="description">
+            A WhatsApp chatbot for handling customer interactions and cake orders. Built with <b>Flask</b> , <b>Twilio</b> and
+            <b>MongoDB</b>. 
+            <br>
+            <b>Key Features: </b>Customer Support Options,Cake Order System,Choose from cake options and provide address,Order Tracking,Conversation History,State Management.
+          </div>
+          <div class="technology-used">
+            <ul>
+              <li>Flask</li>
+              <li>Python</li>
+              <li>MongoDB</li>
+              <li>Twilio</li>
+              <li>Heroku</li>
+              <li>Git</li>
+              <li>WhatsApp</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Telegram Weather Bot -->
+        <div class="card">
+          <div class="header-icons">
+            <div class="left-icons">
+              <i class="fa-regular fa-folder"></i>
+            </div>
+            <div class="right-icons">
+              <i
+                class="fa-brands fa-github icon"
+                onclick="redirect('https://github.com/kalp12/telegram_bot_python')"
+              ></i>
+              <!-- <i
+                class="fa-solid fa-arrow-up-right-from-square icon"
+                onclick="redirect('https://tasktrack-frontend.onrender.com/')"
+              ></i> -->
+            </div>
+          </div>
+          <div class="header">Telegram Bot 🌦️</div>
+          <div class="description">
+            A Python-based Telegram bot that provides weather forecasts and demonstrates various Telegram Bot API features.
+            <br>
+            <b>Key Features: </b>Interactive Commands:/start - Welcome message,/option - Inline keyboard buttons,/location - Request location sharing , Weather Forecast, Message Echo, Callback Queries
+          </div>
+          <div class="technology-used">
+            <ul>
+              <li>Python</li>
+              <li>Telegram</li>
+              <li>OpenWeatherMap</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+        
+
+        
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- CONTACT ============================================================ -->
+    <section id="contact" class="section">
+      <div class="title">What's next?</div>
+      <div class="header">Get In Touch</div>
+      <div class="para">
+        Although I'm not currently looking for any new opportunities, my inbox
+        is always open. Whether you have a question or just want to say hi, I'll
+        try my best to get back to you!
+      </div>
+      <div class="button-wrapper">
+        <div class="button">
+          <a href="mailto:kalpmota2000@gmail.com">Say Hello</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER ============================================================ -->
+    <footer>
+      <p>&copy; 2025 Kalp Mota</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
